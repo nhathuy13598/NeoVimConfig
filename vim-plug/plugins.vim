@@ -23,4 +23,5 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'ryanoasis/vim-devicons'
     " Stable version of coc
     Plug 'neoclide/coc.nvim', {'branch': 'release'}
+    Plug 'tpope/vim-surround'
 call plug#end()
