@@ -24,4 +24,5 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " Stable version of coc
     Plug 'neoclide/coc.nvim', {'branch': 'release'}
     Plug 'tpope/vim-surround'
+    Plug 'tpope/vim-fugitive'
 call plug#end()
