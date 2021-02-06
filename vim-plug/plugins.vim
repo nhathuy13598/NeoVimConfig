@@ -26,4 +26,5 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'tpope/vim-surround'
     Plug 'tpope/vim-fugitive'
     Plug 'ctrlpvim/ctrlp.vim'
+    Plug 'voldikss/vim-floaterm'
 call plug#end()
