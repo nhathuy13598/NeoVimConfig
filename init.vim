@@ -1,5 +1,5 @@
-source $HOME/.config/nvim/vim-plug/plugins.vim
-source $HOME/.config/nvim/themes/airline.vim
-source $HOME/.config/nvim/general/settings.vim
-source $HOME/.config/nvim/keys/mappings.vim
-source $HOME/.config/nvim/plug-config/coc.vim	
+source $HOME/AppData/Local/nvim/vim-plug/plugins.vim
+source $HOME/AppData/Local/nvim/themes/airline.vim
+source $HOME/AppData/Local/nvim/general/settings.vim
+source $HOME/AppData/Local/nvim/keys/mappings.vim
+source $HOME/AppData/Local/nvim/plug-config/coc.vim
