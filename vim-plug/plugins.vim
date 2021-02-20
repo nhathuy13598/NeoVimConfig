@@ -25,4 +25,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'tpope/vim-fugitive'
     Plug 'ctrlpvim/ctrlp.vim'
     Plug 'voldikss/vim-floaterm'
+
+    " Debugging plugin
+    Plug 'puremourning/vimspector'    
 call plug#end()

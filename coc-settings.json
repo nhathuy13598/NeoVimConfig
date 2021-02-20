@@ -1,16 +1,14 @@
 {
   // Auto format files
-  "coc.preferences.formatOnSaveFiletypes": ["css","javascript", "javascriptreact", "json"],
+  "coc.preferences.formatOnSaveFiletypes": [
+    "css",
+    "javascript",
+    "javascriptreact",
+    "json"
+  ],
 
   // Config for C/C++/ObjC
   "clangd.path": "/home/nhathuy/.config/coc/extensions/coc-clangd-data/install/11.0.0/clangd_11.0.0/bin/clangd",
-  "languageserver": {
-    "clangd": {
-      "command": "clangd",
-      "rootPatterns": ["compile_flags.txt", "compile_commands.json"],
-      "filetypes": ["c", "cc", "cpp", "c++", "objc", "objcpp"]
-    }
-  },
 
   // Auto update extensions
   "coc.preferences.extensionUpdateCheck": "daily",
@@ -24,4 +22,3 @@
     "v": "open:vsplit"
   }
 }
-

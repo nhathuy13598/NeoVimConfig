@@ -10,3 +10,7 @@ nmap <F3> :CocCommand explorer<CR>
 " Map ESC key to jk
 inoremap jk <ESC>
 vnoremap jk <ESC>
+
+" Maximize and Minimize window
+nmap m :tabedit %<CR>
+nmap mi :tabclose<CR>
