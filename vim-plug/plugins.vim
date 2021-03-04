@@ -27,5 +27,8 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'voldikss/vim-floaterm'
 
     " Debugging plugin
-    Plug 'puremourning/vimspector'    
+    Plug 'puremourning/vimspector'
+
+    " Show Intellisense
+    Plug 'liuchengxu/vim-which-key'
 call plug#end()
