@@ -15,7 +15,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     "CMake plugin
     Plug 'vhdirk/vim-cmake'
     "Theme
-    Plug 'morhetz/gruvbox'
+    Plug 'tomasiser/vim-code-dark'
     Plug 'vim-airline/vim-airline'
     Plug 'vim-airline/vim-airline-themes'
     Plug 'ryanoasis/vim-devicons'
@@ -31,4 +31,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
 
     " Show Intellisense
     Plug 'liuchengxu/vim-which-key'
+
+    " FZF
+    Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 call plug#end()

@@ -8,3 +8,11 @@ set list
 
 " number of visual spaces per TAB
 set tabstop=4
+set shiftwidth=4
+
+" Remove vertical split line
+set fillchars+=vert:\ 
+highlight VertSplit cterm=NONE
+
+" Set guifont
+set guifont=Consolas:13

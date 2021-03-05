@@ -1,6 +1,3 @@
-" Go back
-nmap <F8> <C-w>w
-
 " Compile files according to file type
 autocmd FileType cpp,c nmap <C-S-b> :w<CR> :!g++ % -o %<<CR>
 
@@ -20,3 +17,9 @@ vnoremap jk <ESC>
 " Maximize and Minimize window
 nmap m :tabedit %<CR>
 nmap mi :tabclose<CR>
+
+" Move between windows
+nmap <C-h> <C-w>h
+nmap <C-j> <C-w>j
+nmap <C-k> <C-w>k
+nmap <C-l> <C-w>l
