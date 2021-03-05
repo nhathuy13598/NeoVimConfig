@@ -36,20 +36,6 @@
     "cpp"
   ],
 
-  // Config for C/C++/ObjC
-  // Config for Golang
-  "languageserver": {
-    "golang": {
-      "command": "gopls",
-      "rootPatterns": [
-        "go.mod"
-      ],
-      "disableWorkspaceFolders": true,
-      "filetypes": [
-        "go"
-      ]
-    }
-  },
   // Auto update extensions
   "coc.preferences.extensionUpdateCheck": "daily",
 
@@ -64,5 +50,6 @@
       "open"
     ],
     "v": "open:vsplit"
-  }
+  },
+  "clangd.path": "/home/nhathuy/.config/coc/extensions/coc-clangd-data/install/11.0.0/clangd_11.0.0/bin/clangd"
 }
