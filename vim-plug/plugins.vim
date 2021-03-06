@@ -28,6 +28,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
 
     " Debugging plugin
     Plug 'puremourning/vimspector'
+    Plug 'szw/vim-maximizer'
 
     " Show Intellisense
     Plug 'liuchengxu/vim-which-key'
