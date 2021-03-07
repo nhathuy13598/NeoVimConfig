@@ -37,6 +37,9 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
     Plug 'junegunn/fzf.vim'
     Plug 'airblade/vim-rooter'
+
+    " Go
+    Plug 'fatih/vim-go'
 call plug#end()
 
 " Automatically install missing plugins on startup
@@ -44,3 +47,16 @@ autocmd VimEnter *
   \  if len(filter(values(g:plugs), '!isdirectory(v:val.dir)'))
   \|   PlugInstall --sync | q
   \| endif
+
+" Coc extension
+let g:coc_global_extensions = [
+\   'coc-css',
+\   'coc-html',
+\   'coc-json',
+\   'coc-emmet',
+\   'coc-eslint',
+\   'coc-prettier',
+\   'coc-tsserver',
+\   'coc-explorer',
+\   'coc-clangd',
+\ ]

@@ -4,6 +4,12 @@ set number relativenumber
 set tabstop=4
 set shiftwidth=4
 
+" Display all white space character
+" https://stackoverflow.com/questions/1675688/make-vim-show-all-white-spaces-as-a-character/1675698
+"↵,→,~,↷,↶,·,¬,⇨,⋄,‸
+set listchars=tab:⇨\ ,trail:⋄
+set list
+
 " Remove vertical split line
 set fillchars+=vert:\ 
 highlight VertSplit cterm=NONE

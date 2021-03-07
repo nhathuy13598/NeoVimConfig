@@ -33,10 +33,8 @@
     "javascriptreact",
     "json"
   ],
-
   // Auto update extensions
   "coc.preferences.extensionUpdateCheck": "daily",
-
   // explorer
   "explorer.width": 40,
   "explorer.icon.enableNerdfont": true,
@@ -45,5 +43,16 @@
     "<cr>": ["expandable?", "expand", "open"],
     "v": "open:vsplit"
   },
-  "clangd.path": "/home/nhathuy/.config/coc/extensions/coc-clangd-data/install/11.0.0/clangd_11.0.0/bin/clangd"
+  "clangd.path": "/home/nhathuy/.config/coc/extensions/coc-clangd-data/install/11.0.0/clangd_11.0.0/bin/clangd",
+  // Language Servers
+  "languageserver": {
+    "golang": {
+      "command": "gopls",
+      "filetypes": ["go"],
+      "initializationOptions": {
+        "usePlaceholders": true
+      }
+    }
+  }
 }
+
