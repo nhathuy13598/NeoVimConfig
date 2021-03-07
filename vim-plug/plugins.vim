@@ -40,6 +40,9 @@ call plug#begin('~/.config/nvim/autoload/plugged')
 
     " Go
     Plug 'fatih/vim-go'
+
+    " Ranger
+    Plug 'kevinhwang91/rnvimr', {'do': 'make sync'}
 call plug#end()
 
 " Automatically install missing plugins on startup
