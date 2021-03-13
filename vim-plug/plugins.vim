@@ -43,6 +43,11 @@ call plug#begin('~/.config/nvim/autoload/plugged')
 
     " Ranger
     Plug 'kevinhwang91/rnvimr', {'do': 'make sync'}
+
+    " Easymotion
+    Plug 'easymotion/vim-easymotion'
+
+    Plug 'airblade/vim-gitgutter'
 call plug#end()
 
 " Automatically install missing plugins on startup

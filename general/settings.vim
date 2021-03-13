@@ -11,11 +11,11 @@ set listchars=tab:⇨\ ,trail:⋄
 set list
 
 " Remove vertical split line
-set fillchars+=vert:\ 
+set fillchars+=vert:\
 highlight VertSplit cterm=NONE
 
 " Set guifont
-set guifont=Consolas:13
+set guifont=Consolas:14
 
 " Blink cursor
 set guicursor+=a:-blinkwait175-blinkoff150-blinkon175
