@@ -1,4 +1,4 @@
 #!/bin/bash
-sudo bash lazygit.bash
-sudo bash ranger.bash
-sudo bash zsh.bash
+bash lazygit.bash
+bash ranger.bash
+bash zsh.bash

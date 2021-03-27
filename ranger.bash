@@ -1,6 +1,6 @@
 #!/bin/bash
 # Ranger
 sudo apt install ranger
-sudo git clone https://github.com/alexanderjeurissen/ranger_devicons ~/.config/ranger/plugins/ranger_devicons
+git clone https://github.com/alexanderjeurissen/ranger_devicons ~/.config/ranger/plugins/ranger_devicons
 # sudo mkdir ~/.config/ranger
-sudo cp rc.conf ~/.config/ranger
+cp rc.conf ~/.config/ranger

@@ -11,8 +11,11 @@ set listchars=tab:⇨\ ,trail:⋄
 set list
 
 " Remove vertical split line
-set fillchars+=vert:\
-highlight VertSplit cterm=NONE
+set fillchars=vert:\
+highlight VertSplit guifg=black guibg=black ctermfg=234 ctermbg=234
+
+" Remove tilde
+highlight EndOfBuffer guifg=black guibg=black ctermfg=234 ctermbg=234
 
 " Set guifont
 set guifont=Consolas:14
