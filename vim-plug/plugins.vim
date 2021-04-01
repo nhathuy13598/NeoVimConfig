@@ -6,16 +6,24 @@ if empty(glob('~/.config/nvim/autoload/plug.vim'))
   autocmd VimEnter * PlugInstall | source $MYVIMRC
 endif
 let g:polyglot_disabled = ['jsx']
+let g:vim_jsx_pretty_highlight_close_tag = 1
 call plug#begin('~/.config/nvim/autoload/plugged')
 
+    " Highlight JXS
+    Plug 'yuezk/vim-js'
+    Plug 'maxmellon/vim-jsx-pretty'
+
     " Better Syntax Support
-    Plug 'sheerun/vim-polyglot'
+    "Plug 'sheerun/vim-polyglot'
+
     " Auto pairs for '(' '[' '{'
     Plug 'jiangmiao/auto-pairs'
+
     "CMake plugin
     Plug 'vhdirk/vim-cmake'
+
     "Theme
-    Plug 'tomasiser/vim-code-dark'
+    Plug 'morhetz/gruvbox'
     Plug 'vim-airline/vim-airline'
     Plug 'vim-airline/vim-airline-themes'
     Plug 'ryanoasis/vim-devicons'
@@ -54,6 +62,9 @@ call plug#begin('~/.config/nvim/autoload/plugged')
 
     " Commentary
     Plug 'tpope/vim-commentary'
+
+    " Quickly align
+    Plug 'junegunn/vim-easy-align'
 call plug#end()
 
 " Automatically install missing plugins on startup

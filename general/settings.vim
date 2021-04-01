@@ -11,10 +11,10 @@ set list
 
 " Remove vertical split line
 set fillchars=vert:\
-highlight VertSplit guifg=black guibg=black ctermfg=234 ctermbg=234
+highlight VertSplit guifg=#ebdbb2 guibg=#282828 ctermfg=235 ctermbg=235
 
 " Remove tilde
-highlight EndOfBuffer guifg=black guibg=black ctermfg=234 ctermbg=234
+highlight EndOfBuffer guifg=#ebdbb2 guibg=#282828 ctermfg=235 ctermbg=235
 
 " Set guifont
 set guifont=Consolas:14
