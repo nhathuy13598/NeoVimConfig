@@ -5,7 +5,7 @@ if empty(glob('~/.config/nvim/autoload/plug.vim'))
   "autocmd VimEnter * PlugInstall
   autocmd VimEnter * PlugInstall | source $MYVIMRC
 endif
-
+let g:polyglot_disabled = ['jsx']
 call plug#begin('~/.config/nvim/autoload/plugged')
 
     " Better Syntax Support
@@ -48,6 +48,12 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'easymotion/vim-easymotion'
 
     Plug 'airblade/vim-gitgutter'
+
+    " Indent line
+    Plug 'Yggdroot/indentLine'
+
+    " Commentary
+    Plug 'tpope/vim-commentary'
 call plug#end()
 
 " Automatically install missing plugins on startup
