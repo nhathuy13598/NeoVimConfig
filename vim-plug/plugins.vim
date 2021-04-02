@@ -65,6 +65,12 @@ call plug#begin('~/.config/nvim/autoload/plugged')
 
     " Quickly align
     Plug 'junegunn/vim-easy-align'
+
+    " Vim snippet
+    Plug 'honza/vim-snippets'
+
+    " Auto close tag
+    Plug 'alvan/vim-closetag'
 call plug#end()
 
 " Automatically install missing plugins on startup

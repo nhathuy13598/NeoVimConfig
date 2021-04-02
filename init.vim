@@ -11,3 +11,4 @@ source $HOME/.config/nvim/plug-config/rnvimr.vim
 source $HOME/.config/nvim/plug-config/easy-motion.vim
 source $HOME/.config/nvim/plug-config/gitgutter.vim
 source $HOME/.config/nvim/plug-config/easy-align.vim
+source $HOME/.config/nvim/plug-config/auto-closetag.vim

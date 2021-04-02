@@ -17,12 +17,12 @@ nnoremap <leader>t :Tags<CR>
 nnoremap <leader>m :Marks<CR>
 
 
-let g:fzf_tags_command = 'ctags -R'
+let g:fzf_tags_command = 'ctags -R --exclude=.git --exclude=node_modules --exclude=lib --exclude=build'
 " Border color
 let g:fzf_layout = {'up':'~90%', 'window': { 'width': 0.8, 'height': 0.8,'yoffset':0.5,'xoffset': 0.5, 'highlight': 'Todo', 'border': 'sharp' } }
 
 let $FZF_DEFAULT_OPTS = '--layout=reverse --info=inline'
-let $FZF_DEFAULT_COMMAND="rg --files --hidden"
+let $FZF_DEFAULT_COMMAND="fdfind --type f --hidden --follow --exclude .git --exclude lib --exclude node_modules"
 
 
 " Customize fzf colors to match your color scheme
