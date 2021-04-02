@@ -71,6 +71,9 @@ call plug#begin('~/.config/nvim/autoload/plugged')
 
     " Auto close tag
     Plug 'alvan/vim-closetag'
+
+    " Start screen
+    Plug 'mhinz/vim-startify'
 call plug#end()
 
 " Automatically install missing plugins on startup
