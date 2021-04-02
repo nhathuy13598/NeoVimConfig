@@ -14,7 +14,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'maxmellon/vim-jsx-pretty'
 
     " Better Syntax Support
-    "Plug 'sheerun/vim-polyglot'
+    Plug 'sheerun/vim-polyglot'
 
     " Auto pairs for '(' '[' '{'
     Plug 'jiangmiao/auto-pairs'
@@ -23,7 +23,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'vhdirk/vim-cmake'
 
     "Theme
-    Plug 'morhetz/gruvbox'
+    Plug 'ghifarit53/tokyonight-vim'
     Plug 'vim-airline/vim-airline'
     Plug 'vim-airline/vim-airline-themes'
     Plug 'ryanoasis/vim-devicons'
