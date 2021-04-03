@@ -35,14 +35,6 @@
     "prettier.tabWidth": 4,
     // Auto update extensions
     "coc.preferences.extensionUpdateCheck": "daily",
-    // explorer
-    "explorer.width": 40,
-    "explorer.icon.enableNerdfont": true,
-    "explorer.previewAction.onHover": false,
-    "explorer.keyMappings.global": {
-        "<cr>": ["expandable?", "expand", "open"],
-        "v": "open:vsplit"
-    },
     "clangd.path": "/home/nhathuy/.config/coc/extensions/coc-clangd-data/install/11.0.0/clangd_11.0.0/bin/clangd",
     // Language Servers
     "languageserver": {

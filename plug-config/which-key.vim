@@ -25,9 +25,7 @@ autocmd  FileType which_key set laststatus=0 noshowmode noruler
   \| autocmd BufLeave <buffer> set laststatus=2 noshowmode ruler
 
 " Single mappings
-let g:which_key_map['/'] = [ '<Plug>NERDCommenterToggle'  , 'comment' ]
 let g:which_key_map['v'] = [ ':e ~/.config/nvim/<CR>'     , 'open vim config']
-let g:which_key_map['x'] = [ ':CocCommand explorer'       , 'explorer' ]
 let g:which_key_map['r'] = [ ':RnvimrToggle<CR>'          , 'ranger']
 let g:which_key_map['f'] = [ ':Files'                     , 'search files' ]
 let g:which_key_map['T'] = [ ':Rg'                        , 'search text' ]

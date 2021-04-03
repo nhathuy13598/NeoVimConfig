@@ -14,7 +14,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'maxmellon/vim-jsx-pretty'
 
     " Better Syntax Support
-    Plug 'sheerun/vim-polyglot'
+    "Plug 'sheerun/vim-polyglot'
 
     " Auto pairs for '(' '[' '{'
     Plug 'jiangmiao/auto-pairs'
@@ -74,6 +74,9 @@ call plug#begin('~/.config/nvim/autoload/plugged')
 
     " Start screen
     Plug 'mhinz/vim-startify'
+
+    " NERD tree
+    Plug 'preservim/nerdtree'
 call plug#end()
 
 " Automatically install missing plugins on startup
@@ -91,6 +94,5 @@ let g:coc_global_extensions = [
 \   'coc-eslint',
 \   'coc-prettier',
 \   'coc-tsserver',
-\   'coc-explorer',
 \   'coc-clangd',
 \ ]

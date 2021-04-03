@@ -14,3 +14,6 @@ set guifont=Consolas:14
 
 " Blink cursor
 set guicursor+=a:-blinkwait175-blinkoff150-blinkon175
+
+" Auto unhighlight searched text
+autocmd InsertEnter * :let @/=""
