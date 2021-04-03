@@ -17,3 +17,8 @@ set guicursor+=a:-blinkwait175-blinkoff150-blinkon175
 
 " Auto unhighlight searched text
 autocmd InsertEnter * :let @/=""
+
+" Disable quote concealing in JSON files
+autocmd Filetype json
+  \ let g:indentLine_setConceal = 0 |
+  \ let g:vim_json_syntax_conceal = 0

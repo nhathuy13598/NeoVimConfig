@@ -89,7 +89,6 @@ autocmd VimEnter *
 let g:coc_global_extensions = [
 \   'coc-css',
 \   'coc-html',
-\   'coc-json',
 \   'coc-emmet',
 \   'coc-eslint',
 \   'coc-prettier',
