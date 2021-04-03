@@ -13,9 +13,6 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'yuezk/vim-js'
     Plug 'maxmellon/vim-jsx-pretty'
 
-    " Better Syntax Support
-    "Plug 'sheerun/vim-polyglot'
-
     " Auto pairs for '(' '[' '{'
     Plug 'jiangmiao/auto-pairs'
 
@@ -31,7 +28,6 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'neoclide/coc.nvim', {'branch': 'release'}
     Plug 'tpope/vim-surround'
     Plug 'tpope/vim-fugitive'
-    Plug 'ctrlpvim/ctrlp.vim'
     Plug 'voldikss/vim-floaterm'
 
     " Debugging plugin

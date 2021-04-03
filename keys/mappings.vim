@@ -21,4 +21,13 @@ nmap <C-j> <C-w>j
 nmap <C-k> <C-w>k
 nmap <C-l> <C-w>l
 
+" Map Ctrl + space to go to next buffer
 nmap <C-space> :bnext<CR>
+
+" Map keys related to Copy, Paste
+nmap p gp
+nmap P gP
+" Yank line with new line
+nmap C Y
+" Yank without new line
+nmap D y$
