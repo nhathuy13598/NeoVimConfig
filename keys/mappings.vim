@@ -31,3 +31,7 @@ nmap P gP
 nmap C Y
 " Yank without new line
 nmap D y$
+
+" Map keys for autocompletion
+inoremap <expr> <C-j> pumvisible() ? "\<C-N>" : "\<C-j>"
+inoremap <expr> <C-k> pumvisible() ? "\<C-P>" : "\<C-k>"
