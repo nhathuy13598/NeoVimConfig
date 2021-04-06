@@ -73,6 +73,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
 
     " NERD tree
     Plug 'preservim/nerdtree'
+    Plug 'octol/vim-cpp-enhanced-highlight'
 call plug#end()
 
 " Automatically install missing plugins on startup
