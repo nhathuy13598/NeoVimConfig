@@ -26,7 +26,7 @@ autocmd  FileType which_key set laststatus=0 noshowmode noruler
 
 " Single mappings
 let g:which_key_map['v'] = [ ':e ~/.config/nvim/<CR>'     , 'open vim config']
-let g:which_key_map['r'] = [ ':RnvimrToggle<CR>'          , 'ranger']
+let g:which_key_map['r'] = [ ':RnvimrToggle'              , 'ranger']
 let g:which_key_map['f'] = [ ':Files'                     , 'search files' ]
 let g:which_key_map['T'] = [ ':Rg'                        , 'search text' ]
 
