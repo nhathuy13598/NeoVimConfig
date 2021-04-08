@@ -24,6 +24,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'vim-airline/vim-airline'
     Plug 'vim-airline/vim-airline-themes'
     Plug 'ryanoasis/vim-devicons'
+
     " Stable version of coc
     Plug 'neoclide/coc.nvim', {'branch': 'release'}
     Plug 'tpope/vim-surround'
@@ -40,7 +41,6 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " FZF
     Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
     Plug 'junegunn/fzf.vim'
-    Plug 'airblade/vim-rooter'
 
     " Go
     Plug 'fatih/vim-go'
@@ -73,6 +73,8 @@ call plug#begin('~/.config/nvim/autoload/plugged')
 
     " NERD tree
     Plug 'preservim/nerdtree'
+
+    " Enhance C/C++ color
     Plug 'octol/vim-cpp-enhanced-highlight'
 call plug#end()
 
