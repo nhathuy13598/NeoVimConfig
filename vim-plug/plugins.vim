@@ -93,4 +93,5 @@ let g:coc_global_extensions = [
 \   'coc-prettier',
 \   'coc-tsserver',
 \   'coc-clangd',
+\   'coc-snippets',
 \ ]
