@@ -1,6 +1,6 @@
 " Map ESC key to jk
 inoremap jk <ESC>
-vnoremap oo <ESC>
+vnoremap zz <ESC>
 
 " Move between windows
 nmap <C-h> <C-w>h
