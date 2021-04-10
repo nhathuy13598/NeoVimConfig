@@ -14,6 +14,9 @@ nmap <C-space> :bnext<CR>
 " Map keys related to Copy, Paste
 nmap p gp
 nmap P gP
+" Copy without moving cursor to the top of selection
+vmap y y`]
+vmap Y yy`]
 
 " Map keys for autocompletion
 inoremap <expr> <C-j> pumvisible() ? "\<C-N>" : "\<C-j>"
