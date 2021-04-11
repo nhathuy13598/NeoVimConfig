@@ -1,4 +1,4 @@
-set number
+set number relativenumber
 
 " number of visual spaces per TAB
 set tabstop=4 shiftwidth=4 expandtab

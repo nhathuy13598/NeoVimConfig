@@ -76,6 +76,9 @@ call plug#begin('~/.config/nvim/autoload/plugged')
 
     " Enhance C/C++ color
     Plug 'octol/vim-cpp-enhanced-highlight'
+
+    " Copy paste system
+    Plug 'christoomey/vim-system-copy'
 call plug#end()
 
 " Automatically install missing plugins on startup
