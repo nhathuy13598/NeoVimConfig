@@ -25,7 +25,7 @@ autocmd  FileType which_key set laststatus=0 noshowmode noruler
   \| autocmd BufLeave <buffer> set laststatus=2 noshowmode ruler
 
 " Single mappings
-let g:which_key_map['v'] = [ ':e ~/.config/nvim/<CR>'     , 'open vim config']
+let g:which_key_map['v'] = [ ':cd ~/.config/nvim/<CR>'    , 'open vim config']
 let g:which_key_map['r'] = [ ':RnvimrToggle'              , 'ranger']
 let g:which_key_map['f'] = [ ':Files'                     , 'search files' ]
 let g:which_key_map['T'] = [ ':Rg'                        , 'search text' ]
@@ -102,20 +102,21 @@ let g:which_key_map.b = {
 " d is for debug
 let g:which_key_map.d = {
       \ 'name' : '+debug' ,
-      \ 't' : [':call vimspector#Launch()<CR>'                 , 'begin debug'],
-      \ 'b' : ['<Plug>VimspectorToggleBreakpoint'              , 'breakpoint'],
-      \ 'B' : ['<Plug>VimspectorToggleConditionalBreakpoint'   , 'conditional breakpoint'],
-      \ 'c' : ['<Plug>VimspectorRunToCursor'                   , 'run to cursor'],
-      \ 'd' : ['<Plug>VimspectorContinue'                      , 'continue'],
-      \ 'f' : ['<Plug>VimspectorAddFunctionBreakpoint'         , 'function breakpoint'],
-      \ 'm' : [':MaximizerToggle'                              , 'maximize window'],
-      \ 'o' : ['<Plug>VimspectorStepOver'                      , 'step over'],
-      \ 'O' : ['<Plug>VimspectorStepOut'                       , 'step out'],
-      \ 'i' : ['<Plug>VimspectorStepInto'                      , 'step into'],
-      \ 'p' : ['<Plug>VimspectorPause'                         , 'pause'],
-      \ 'r' : ['<Plug>VimspectorRestart'                       , 'restart'],
-      \ 's' : ['<Plug>VimspectorStop'                          , 'stop'],
-      \ 'l' : [':call vimspector#Reset()<CR>'                  , 'reset'],
+      \ 'y' : [':!cp $HOME/.config/nvim/.vimspector.json $(pwd)/', 'copy config file'],
+      \ 't' : ['\:call vimspector#Launch()'                      , 'begin debug'],
+      \ 'b' : ['<Plug>VimspectorToggleBreakpoint'                , 'breakpoint'],
+      \ 'B' : ['<Plug>VimspectorToggleConditionalBreakpoint'     , 'conditional breakpoint'],
+      \ 'c' : ['<Plug>VimspectorRunToCursor'                     , 'run to cursor'],
+      \ 'd' : ['<Plug>VimspectorContinue'                        , 'continue'],
+      \ 'f' : ['<Plug>VimspectorAddFunctionBreakpoint'           , 'function breakpoint'],
+      \ 'm' : [':MaximizerToggle'                                , 'maximize window'],
+      \ 'o' : ['<Plug>VimspectorStepOver'                        , 'step over'],
+      \ 'O' : ['<Plug>VimspectorStepOut'                         , 'step out'],
+      \ 'i' : ['<Plug>VimspectorStepInto'                        , 'step into'],
+      \ 'p' : ['<Plug>VimspectorPause'                           , 'pause'],
+      \ 'r' : ['<Plug>VimspectorRestart'                         , 'restart'],
+      \ 's' : ['<Plug>VimspectorStop'                            , 'stop'],
+      \ 'l' : ['\:call vimspector#Reset()'                       , 'reset'],
       \ }
 
 " l is for language server protocol
