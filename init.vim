@@ -13,3 +13,4 @@ source $HOME/.config/nvim/plug-config/gitgutter.vim
 source $HOME/.config/nvim/plug-config/easy-align.vim
 source $HOME/.config/nvim/plug-config/auto-closetag.vim
 source $HOME/.config/nvim/plug-config/NERDTree.vim
+source $HOME/.config/nvim/plug-config/system-copy.vim
