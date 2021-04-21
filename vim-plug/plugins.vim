@@ -20,7 +20,6 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'vhdirk/vim-cmake'
 
     "Theme
-    Plug 'ghifarit53/tokyonight-vim'
     Plug 'vim-airline/vim-airline'
     Plug 'vim-airline/vim-airline-themes'
     Plug 'ryanoasis/vim-devicons'
@@ -79,6 +78,9 @@ call plug#begin('~/.config/nvim/autoload/plugged')
 
     " Copy paste system
     Plug 'christoomey/vim-system-copy'
+
+    " Gruvbox
+    Plug 'morhetz/gruvbox'
 call plug#end()
 
 " Automatically install missing plugins on startup

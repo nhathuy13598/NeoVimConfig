@@ -12,12 +12,11 @@ let g:airline_left_sep = ''
 let g:airline_right_sep = ''
 
 " Switch to your current theme
-let g:airline_theme = 'tokyonight'
 syntax on
 set termguicolors
-let g:tokyonight_style = 'storm' " available: night, storm
-let g:tokyonight_enable_italic = 1
-colorscheme tokyonight
+let g:airline_theme = 'gruvbox'
+let g:gruvbox_italic = 1
+colorscheme gruvbox
 
 " Always show tabs
 set showtabline=2
