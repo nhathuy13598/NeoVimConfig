@@ -1,3 +1,4 @@
+local actions = require("telescope.actions")
 require("telescope").setup {
     defaults = {
         vimgrep_arguments = {
@@ -45,7 +46,21 @@ require("telescope").setup {
         qflist_previewer        = require "telescope.previewers".vim_buffer_qflist.new,
 
         -- Developer configurations: Not meant for general override
-        buffer_previewer_maker  = require "telescope.previewers".buffer_previewer_maker
+        buffer_previewer_maker  = require "telescope.previewers".buffer_previewer_maker,
+        mappings = {
+            i = {
+                ["<C-c>"] = actions.close,
+                ["<C-j>"] = actions.move_selection_next,
+                ["<C-k>"] = actions.move_selection_previous,
+                ["<C-q>"] = actions.smart_send_to_qflist + actions.open_qflist,
+                ["<CR>"]  = actions.select_default + actions.center
+            },
+            n = {
+                ["<C-j>"] = actions.move_selection_next,
+                ["<C-k>"] = actions.move_selection_previous,
+                ["<C-q>"] = actions.smart_send_to_qflist + actions.open_qflist,
+            }
+        }
     },
     extensions = {
         media_files = {
