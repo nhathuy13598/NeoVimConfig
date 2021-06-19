@@ -25,15 +25,15 @@ map("n", "<C-t>t", [[<Cmd> tabnew | term <CR>]], opt) -- term newtab
 map("n", "<C-a>", [[ <Cmd> %y+<CR>]], opt)
 
 -- toggle numbers ---
-map("n", "<leader>n", [[ <Cmd> set nu!<CR>]], opt)
+map("n", "<Leader>n", [[ <Cmd> set nu!<CR>]], opt)
 
 -- toggle truezen.nvim's ataraxis and minimalist mode
-map("n", "<leader>z", [[ <Cmd> TZAtaraxis<CR>]], opt)
-map("n", "<leader>m", [[ <Cmd> TZMinimalist<CR>]], opt)
+map("n", "<Leader>z", [[ <Cmd> TZAtaraxis<CR>]], opt)
+map("n", "<Leader>m", [[ <Cmd> TZMinimalist<CR>]], opt)
 
 map("n", "<C-s>", [[ <Cmd> w <CR>]], opt)
 -- vim.cmd("inoremap jh <Esc>")
 
 -- Commenter Keybinding
-map("n", "<leader>/", ":CommentToggle<CR>", {noremap = true, silent = true})
-map("v", "<leader>/", ":CommentToggle<CR>", {noremap = true, silent = true})
+map("n", "<Leader>/", ":CommentToggle<CR>", {noremap = true, silent = true})
+map("v", "<Leader>/", ":CommentToggle<CR>", {noremap = true, silent = true})
