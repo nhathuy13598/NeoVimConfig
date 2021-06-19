@@ -4,11 +4,11 @@ require("which-key").setup {
         registers   = true, --[[shows your registers on " in NORMAL or <C-r> in INSERT mode
                                 the presets plugin, adds help for a bunch of default keybindings in Neovim
                                 No actual key bindings are created]]
-        spelling    = {
+        spelling = {
             enabled         = false,    -- enabling this will show WhichKey when pressing z= to select spelling suggestions
             suggestions     = 20        -- how many suggestions should be shown in the list?
         },
-        presets     = {
+        presets  = {
             operators       = true, -- adds help for operators like d, y, ... and registers them for motion / text object completion
             motions         = true, -- adds help for motions
             text_objects    = true, -- help for text objects triggered after entering an operator
@@ -33,7 +33,7 @@ require("which-key").setup {
         padding     = {2, 2, 2, 2}  -- extra window padding [top, right, bottom, left]
     },
     layout = {
-        height  = {min = 4, max = 25},  -- min and max height of the columns
+        height  = {min = 4,  max = 25},  -- min and max height of the columns
         width   = {min = 20, max = 50}, -- min and max width of the columns
         spacing = 3                     -- spacing between columns
     },
@@ -43,3 +43,99 @@ require("which-key").setup {
     triggers        = "auto"    -- automatically setup triggers
     -- triggers = {"<Leader>"}  -- or specifiy a list manually
 }
+
+local opts = {
+    prefix  = "<Leader>",
+    mode    = "n",  -- NORMAL mode
+    buffer  = nil,  -- Global mappings. Specify a buffer number for buffer local mappings
+    silent  = true, -- use `silent` when creating keymaps
+    noremap = true, -- use `noremap` when creating keymaps
+    nowait  = false -- use `nowait` when creating keymaps
+}
+local mappings = {
+    ["/"] = "Comment",
+    ["c"] = "Close Buffer",
+    ["e"] = "Explorer",
+    ["f"] = "Find File",
+    ["h"] = "No Highlight",
+    ["p"] = "Projects",
+    d = {
+        name = "+Diagnostics",
+        t = {"<cMD>tROUBLEtOGGLE<cr>",                              "Trouble"},
+        w = {"<Cmd>TroubleToggle lsp_workspace_diagnostics<CR>",    "Workspace"},
+        d = {"<Cmd>TroubleToggle lsp_document_diagnostics<CR>",     "Document"},
+        q = {"<Cmd>TroubleToggle quickfix<CR>",                     "Quickfix"},
+        l = {"<Cmd>TroubleToggle loclist<CR>",                      "Loclist"},
+        r = {"<Cmd>TroubleToggle lsp_references<CR>",               "References"},
+    },
+    D = {
+        name = "+Debug",
+        b = {"<Cmd>DebugToggleBreakpoint<CR>",  "Toggle Breakpoint"},
+        c = {"<Cmd>DebugContinue<CR>",          "Continue"},
+        i = {"<Cmd>DebugStepInto<CR>",          "Step Into"},
+        o = {"<Cmd>DebugStepOver<CR>",          "Step Over"},
+        r = {"<Cmd>DebugToggleRepl<CR>",        "Toggle Repl"},
+        s = {"<Cmd>DebugStart<CR>",             "Start"}
+    },
+    g = {
+        name = "+Git",
+        j = {"<Cmd>NextHunk<CR>",                   "Next Hunk"},
+        k = {"<Cmd>PrevHunk<CR>",                   "Prev Hunk"},
+        p = {"<Cmd>PreviewHunk<CR>",                "Preview Hunk"},
+        r = {"<Cmd>ResetHunk<CR>",                  "Reset Hunk"},
+        R = {"<Cmd>ResetBuffer<CR>",                "Reset Buffer"},
+        s = {"<Cmd>StageHunk<CR>",                  "Stage Hunk"},
+        u = {"<Cmd>UndoStageHunk<CR>",              "Undo Stage Hunk"},
+        o = {"<Cmd>Telescope git_status<CR>",       "Open changed file"},
+        b = {"<Cmd>Telescope git_branches<CR>",     "Checkout branch"},
+        c = {"<Cmd>Telescope git_commits<CR>",      "Checkout commit"},
+        C = {"<Cmd>Telescope git_bcommits<CR>",     "Checkout commit(for current file)"},
+    },
+    l = {
+        name = "+LSP",
+        a = {"<Cmd>Lspsaga code_action<CR>",                        "Code Action"},
+        A = {"<Cmd>Lspsaga range_code_action<CR>",                  "Selected Action"},
+        d = {"<Cmd>Telescope lsp_document_diagnostics<CR>",         "Document Diagnostics"},
+        D = {"<Cmd>Telescope lsp_workspace_diagnostics<CR>",        "Workspace Diagnostics"},
+        f = {"<Cmd>LspFormatting<CR>",                              "Format"},
+        i = {"<Cmd>LspInfo<CR>",                                    "Info"},
+        l = {"<Cmd>Lspsaga lsp_finder<CR>",                         "LSP Finder"},
+        L = {"<Cmd>Lspsaga show_line_diagnostics<CR>",              "Line Diagnostics"},
+        p = {"<Cmd>Lspsaga preview_definition<CR>",                 "Preview Definition"},
+        q = {"<Cmd>Telescope quickfix<CR>",                         "Quickfix"},
+        r = {"<Cmd>Lspsaga rename<CR>",                             "Rename"},
+        t = {"<Cmd>LspTypeDefinition<CR>",                          "Type Definition"},
+        x = {"<Cmd>cclose<CR>",                                     "Close Quickfix"},
+        s = {"<Cmd>Telescope lsp_document_symbols<CR>",             "Document Symbols"},
+        S = {"<Cmd>Telescope lsp_dynamic_workspace_symbols<CR>",    "Workspace Symbols"}
+    },
+    s = {
+        name = "+Search",
+        b = {"<Cmd>Telescope git_branches<CR>",                 "Checkout branch"},
+        c = {"<Cmd>Telescope colorscheme<CR>",                  "Colorscheme"},
+        d = {"<Cmd>Telescope lsp_document_diagnostics<CR>",     "Document Diagnostics"},
+        D = {"<Cmd>Telescope lsp_workspace_diagnostics<CR>",    "Workspace Diagnostics"},
+        f = {"<Cmd>Telescope find_files<CR>",                   "Find File"},
+        m = {"<Cmd>Telescope marks<CR>",                        "Marks"},
+        M = {"<Cmd>Telescope man_pages<CR>",                    "Man Pages"},
+        r = {"<Cmd>Telescope oldfiles<CR>",                     "Open Recent File"},
+        R = {"<Cmd>Telescope registers<CR>",                    "Registers"},
+        t = {"<Cmd>Telescope live_grep<CR>",                    "Text"}
+    },
+    S = {
+        name = "+Session",
+        s = {"<Cmd>SessionSave<CR>", "Save Session"},
+        l = {"<Cmd>SessionLoad<cr>", "Load Session"}
+    },
+
+    -- extras
+    z = {
+        name = "+Zen",
+        s = {"<Cmd>TZBottom<CR>",   "Toggle status line"},
+        t = {"<Cmd>TZTop<CR>",      "Toggle tab bar"},
+        z = {"<Cmd>TZAtaraxis<CR>", "Toggle zen"},
+    }
+}
+
+local wk = require("which-key")
+wk.register(mappings, opts)
