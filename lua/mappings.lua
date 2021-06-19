@@ -41,3 +41,12 @@ map("v", "<Leader>/", ":CommentToggle<CR>", nsilent)
 
 -- Remove highlights after searching
 map("n", "<Leader>h", ":set hlsearch!<CR>", nsilent)
+
+-- tab utilities
+map("n", "<S-t>", [[<Cmd>tabnew<CR>]], nsilent) -- new tab
+map("n", "<S-x>", [[<Cmd>bdelete<CR>]], nsilent) -- close tab
+
+-- buffer utilities
+map("n", "gb", [[<Cmd>BufferLinePick<CR>]], nsilent) --go to buffer
+map("n", "<TAB>", [[<Cmd>BufferLineCycleNext<CR>]], nsilent) -- next buffer
+map("n", "<S-TAB>", [[<Cmd>BufferLineCyclePrev<CR>]], nsilent) -- prev buffer

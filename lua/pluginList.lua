@@ -4,7 +4,11 @@ local use = packer.use
 -- using { } for using different branch , loading plugin with certain commands etc
 return packer.startup(
     function()
+        -- using packer.nvim
         use "wbthomason/packer.nvim"
+
+        -- buffer line
+        use {'akinsho/nvim-bufferline.lua', requires = 'kyazdani42/nvim-web-devicons'}
 
         -- color related stuff
         use "siduck76/nvim-base16.lua"
@@ -20,7 +24,6 @@ return packer.startup(
         use "kabouzeid/nvim-lspinstall"
 
         use "lewis6991/gitsigns.nvim"
-        use "akinsho/nvim-bufferline.lua"
         use "glepnir/galaxyline.nvim"
         use "windwp/nvim-autopairs"
         use "alvan/vim-closetag"
@@ -34,7 +37,6 @@ return packer.startup(
 
         -- file managing , picker etc
         use "kyazdani42/nvim-tree.lua"
-        use "kyazdani42/nvim-web-devicons"
         use "ryanoasis/vim-devicons"
         use "nvim-telescope/telescope.nvim"
         use "nvim-telescope/telescope-media-files.nvim"
