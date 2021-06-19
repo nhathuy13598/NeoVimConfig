@@ -28,11 +28,12 @@ opt("o", "timeoutlen", 500)
 -- Numbers
 opt("w", "number", true)
 opt("o", "numberwidth", 2)
--- opt("w", "relativenumber", true)
+opt("w", "relativenumber", true)
 
 -- for indenline
 opt("b", "expandtab", true)
-opt("b", "shiftwidth", 2)
+opt("b", "shiftwidth", 4)
+opt("b", "tabstop", 4)
 opt("b", "smartindent", true)
 
 local M = {}
@@ -47,5 +48,5 @@ function M.has_width_gt(cols)
     return vim.fn.winwidth(0) / 2 > cols
 end
 -- file extension specific tabbing
-vim.cmd([[autocmd Filetype python setlocal expandtab tabstop=4 shiftwidth=4 softtabstop=4]])
+-- vim.cmd([[autocmd Filetype python setlocal expandtab tabstop=4 shiftwidth=4 softtabstop=4]])
 return M
