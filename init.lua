@@ -2,32 +2,32 @@
 require "globals" 
 require "plugins"
 require "settings"
+require "mappings"
 
-require "top-bufferline"
-require "statusline"
+require "configs/top-bufferline"
+require "configs/statusline"
 
 require("colorizer").setup()
 require("neoscroll").setup() -- smooth scroll
 
 -- lsp stuff
-require "nvim-lspconfig"
-require "compe-completion"
+require "configs/nvim-lspconfig"
+require "configs/compe-completion"
 
-require "highlights"
+require "configs/highlights"
 
-require "treesitter-nvim"
-require "mappings"
+require "configs/treesitter-nvim"
 
-require "telescope-nvim"
-require "nvimTree" -- file tree stuff
-require "file-icons"
+require "configs/telescope-nvim"
+require "configs/nvimTree" -- file tree stuff
+require "configs/file-icons"
 
 -- git signs , lsp symbols etc
-require "gitsigns-nvim"
+require "configs/gitsigns-nvim"
 require("nvim-autopairs").setup()
 require("lspkind").init()
 
-require "zenmode"
-require "whichkey"
-require "dashboard"
+require "configs/zenmode"
+require "configs/whichkey"
+require "configs/dashboard"
 require("nvim_comment").setup()
