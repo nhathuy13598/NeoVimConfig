@@ -8,12 +8,10 @@ ts_config.setup {
         "bash",
         "lua",
         "json",
-        "python"
-        -- "rust",
-        -- "go"
+        "go",
     },
     highlight = {
-        enable = true,
-        use_languagetree = true
+        enable              = true,
+        use_languagetree    = true
     }
 }
