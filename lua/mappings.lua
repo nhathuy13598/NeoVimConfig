@@ -50,3 +50,6 @@ map("n", "<S-x>", [[<Cmd>bdelete<CR>]], nsilent) -- close tab
 map("n", "gb", [[<Cmd>BufferLinePick<CR>]], nsilent) --go to buffer
 map("n", "<TAB>", [[<Cmd>BufferLineCycleNext<CR>]], nsilent) -- next buffer
 map("n", "<S-TAB>", [[<Cmd>BufferLineCyclePrev<CR>]], nsilent) -- prev buffer
+
+-- nvimtree
+map("n", "<C-n>", [[<Cmd>NvimTreeToggle<CR>]], nsilent)

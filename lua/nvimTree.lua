@@ -1,7 +1,7 @@
 local g = vim.g
 
 g.nvim_tree_side                    = "left"
-g.nvim_tree_width                   = 25
+g.nvim_tree_width                   = 40
 g.nvim_tree_ignore                  = {".git", "node_modules", ".cache", "build"}
 g.nvim_tree_auto_open               = 0
 g.nvim_tree_auto_close              = 0
@@ -13,6 +13,16 @@ g.nvim_tree_git_hl                  = 1
 g.nvim_tree_root_folder_modifier    = ":t"
 g.nvim_tree_tab_open                = 0
 g.nvim_tree_allow_resize            = 1
+g.nvim_tree_lsp_diagnostics         = 1
+g.nvim_tree_group_empty             = 1
+g.nvim_tree_gitignore               = 1
+g.nvim_tree_highlight_opened_files  = 1
+g.nvim_tree_width_allow_resize      = 1
+g.nvim_tree_disable_netrw           = 0
+g.nvim_tree_icon_padding            = ' '   --[[One space by default, used for rendering the space between the icon and the filename.
+                                                Use with caution, it could break rendering if you set an empty string depending on your font.]]
+g.nvim_tree_update_cwd              = 1     --[[Will update the tree cwd when changing nvim's directory (DirChanged event).
+                                                Behaves strangely with autochdir set.]]
 
 g.nvim_tree_show_icons = {
     git = 1,
@@ -33,25 +43,20 @@ g.nvim_tree_icons = {
         ignored     = "◌"
     },
     folder = {
-        default         = "",
-        open            = "",
+        default         = "",
+        open            = "",
+        empty           = "",
+        empty_open      = "",
         symlink         = "",
-        empty           = "",
-        empty_open      = "",
-        symlink_open    = ""
+        symlink_open    = ""
+    },
+    lsp = {
+        hint    = "",
+        info    = "",
+        warning = "",
+        error   = "",
     }
 }
-
--- Mappings for nvimtree
-vim.api.nvim_set_keymap(
-    "n",
-    "<C-n>",
-    ":NvimTreeToggle<CR>",
-    {
-        noremap = true,
-        silent  = true
-    }
-)
 
 local tree_cb = require("nvim-tree.config").nvim_tree_callback
 
