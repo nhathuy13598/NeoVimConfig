@@ -2,23 +2,23 @@ local cmd = vim.cmd
 
 local colors = require "themes/onedark"
 
-local white = colors.white
-local darker_black = colors.darker_black
-local black = colors.black
-local black2 = colors.black2
-local one_bg = colors.one_bg
-local one_bg2 = colors.one_bg2
-local one_bg3 = colors.one_bg3
-local light_grey = colors.light_grey
-local grey = colors.grey
-local grey_fg = colors.grey_fg
-local red = colors.red
-local line = colors.line
-local green = colors.green
-local nord_blue = colors.nord_blue
-local blue = colors.blue
-local yellow = colors.yellow
-local purple = colors.purple
+local white         = colors.white
+local darker_black  = colors.darker_black
+local black         = colors.black
+local black2        = colors.black2
+local one_bg        = colors.one_bg
+local one_bg2       = colors.one_bg2
+local one_bg3       = colors.one_bg3
+local light_grey    = colors.light_grey
+local grey          = colors.grey
+local grey_fg       = colors.grey_fg
+local red           = colors.red
+local line          = colors.line
+local green         = colors.green
+local nord_blue     = colors.nord_blue
+local blue          = colors.blue
+local yellow        = colors.yellow
+local purple        = colors.purple
 
 -- for guifg , bg
 
