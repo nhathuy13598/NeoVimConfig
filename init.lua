@@ -12,14 +12,11 @@ require("neoscroll").setup() -- smooth scroll
 require "nvim-lspconfig"
 require "compe-completion"
 
-local cmd = vim.cmd
-local g = vim.g
-
-g.mapleader = " "
-g.auto_save = 0
+vim.g.mapleader = " "
+vim.g.auto_save = 0
 
 -- colorscheme related stuff
-cmd "syntax on"
+vim.cmd "syntax on"
 
 local base16 = require "base16"
 base16(base16.themes["onedark"], true)
@@ -28,14 +25,14 @@ require "highlights"
 
 -- blankline
 
-g.indentLine_enabled = 1
-g.indent_blankline_char = "▏"
+vim.g.indentLine_enabled = 1
+vim.g.indent_blankline_char = "▏"
 
-g.indent_blankline_filetype_exclude = {"help", "terminal", "dashboard"}
-g.indent_blankline_buftype_exclude = {"terminal"}
+vim.g.indent_blankline_filetype_exclude = {"help", "terminal", "dashboard"}
+vim.g.indent_blankline_buftype_exclude = {"terminal"}
 
-g.indent_blankline_show_trailing_blankline_indent = false
-g.indent_blankline_show_first_indent_level = false
+vim.g.indent_blankline_show_trailing_blankline_indent = false
+vim.g.indent_blankline_show_first_indent_level = false
 
 require "treesitter-nvim"
 require "mappings"

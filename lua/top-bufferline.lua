@@ -20,7 +20,6 @@ require "bufferline".setup {
 
 local opt = {silent = true}
 local map = vim.api.nvim_set_keymap
-vim.g.mapleader = " "
 
 -- MAPPINGS
 map("n", "<S-t>", [[<Cmd>tabnew<CR>]], opt) -- new tab
