@@ -7,6 +7,7 @@
 end
 
 local opt = {}
+local nsilent = {noremap = true, silent = true}
 
 -- dont copy any deleted text , this is disabled by default so uncomment the below mappings if you want them!
 --[[ remove this line
@@ -35,5 +36,8 @@ map("n", "<C-s>", [[ <Cmd> w <CR>]], opt)
 -- vim.cmd("inoremap jh <Esc>")
 
 -- Commenter Keybinding
-map("n", "<Leader>/", ":CommentToggle<CR>", {noremap = true, silent = true})
-map("v", "<Leader>/", ":CommentToggle<CR>", {noremap = true, silent = true})
+map("n", "<Leader>/", ":CommentToggle<CR>", nsilent)
+map("v", "<Leader>/", ":CommentToggle<CR>", nsilent)
+
+-- Remove highlights after searching
+map("n", "<Leader>h", ":set hlsearch!<CR>", nsilent)
