@@ -53,3 +53,19 @@ map("n", "<S-TAB>", [[<Cmd>BufferLineCyclePrev<CR>]], nsilent) -- prev buffer
 
 -- nvimtree
 map("n", "<C-n>", [[<Cmd>NvimTreeToggle<CR>]], nsilent)
+
+-- telescope
+require("telescope").load_extension("media_files")
+map("n", "<Leader>ff", [[<Cmd>lua require('telescope.builtin').find_files()<CR>]], nsilent)
+map("n", "<Leader>fp", [[<Cmd>lua require('telescope').extensions.media_files.media_files()<CR>]],nsilent)
+
+map("n", "<Leader>fb", [[<Cmd>lua require('telescope.builtin').buffers()<CR>]], nsilent)
+map("n", "<Leader>fh", [[<Cmd>lua require('telescope.builtin').help_tags()<CR>]], nsilent)
+map("n", "<Leader>fo", [[<Cmd>lua require('telescope.builtin').oldfiles()<CR>]], nsilent)
+map("n", "<Leader>fm", [[<Cmd> Neoformat<CR>]], nsilent)
+
+map("n", "<Leader>fw", [[<Cmd> Telescope live_grep<CR>]], nsilent)
+map("n", "<Leader>fn", [[<Cmd> DashboardNewFile<CR>]], nsilent)
+map("n", "<Leader>bm", [[<Cmd> DashboardJumpMarks<CR>]], nsilent)
+map("n", "<Leader>sl", [[<Cmd> SessionLoad<CR>]], nsilent)
+map("n", "<Leader>ss", [[<Cmd> SessionSave<CR>]], nsilent)

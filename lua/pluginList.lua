@@ -8,7 +8,7 @@ return packer.startup(
         use "wbthomason/packer.nvim"
 
         -- buffer line
-        use {'akinsho/nvim-bufferline.lua', requires = 'kyazdani42/nvim-web-devicons'}
+        use {"akinsho/nvim-bufferline.lua", requires = "kyazdani42/nvim-web-devicons"}
 
         -- color related stuff
         use "siduck76/nvim-base16.lua"
@@ -20,7 +20,6 @@ return packer.startup(
         use "hrsh7th/nvim-compe"
         use "onsails/lspkind-nvim"
         use "sbdchd/neoformat"
-        use "nvim-lua/plenary.nvim"
         use "kabouzeid/nvim-lspinstall"
 
         use "lewis6991/gitsigns.nvim"
@@ -36,11 +35,10 @@ return packer.startup(
         use "rafamadriz/friendly-snippets"
 
         -- file managing , picker etc
-        use "kyazdani42/nvim-tree.lua"
+        use {"kyazdani42/nvim-tree.lua", requires = "kyazdani42/nvim-web-devicons"}
         use "ryanoasis/vim-devicons"
-        use "nvim-telescope/telescope.nvim"
+        use {"nvim-telescope/telescope.nvim", requires = {{'nvim-lua/popup.nvim'}, {'nvim-lua/plenary.nvim'}}}
         use "nvim-telescope/telescope-media-files.nvim"
-        use "nvim-lua/popup.nvim"
 
         -- misc
         use "glepnir/dashboard-nvim"
