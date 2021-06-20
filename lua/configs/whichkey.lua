@@ -111,16 +111,15 @@ local mappings = {
     },
     s = {
         name = "+Search",
-        b = {"<Cmd>Telescope git_branches<CR>",                 "Checkout branch"},
+        b = {"<Cmd>Telescope buffers<CR>",                      "Find buffers"},
         c = {"<Cmd>Telescope colorscheme<CR>",                  "Colorscheme"},
-        d = {"<Cmd>Telescope lsp_document_diagnostics<CR>",     "Document Diagnostics"},
-        D = {"<Cmd>Telescope lsp_workspace_diagnostics<CR>",    "Workspace Diagnostics"},
         f = {"<Cmd>Telescope find_files<CR>",                   "Find File"},
         m = {"<Cmd>Telescope marks<CR>",                        "Marks"},
         M = {"<Cmd>Telescope man_pages<CR>",                    "Man Pages"},
         r = {"<Cmd>Telescope oldfiles<CR>",                     "Open Recent File"},
         R = {"<Cmd>Telescope registers<CR>",                    "Registers"},
-        t = {"<Cmd>Telescope live_grep<CR>",                    "Text"}
+        t = {"<Cmd>Telescope live_grep<CR>",                    "Text"},
+        h = {"<Cmd>Telescope help_tags<CR>",                    "Help tags"}
     },
     S = {
         name = "+Session",
