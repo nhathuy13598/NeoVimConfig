@@ -100,3 +100,6 @@ source $ZSH/oh-my-zsh.sh
 
 # Bind keys
 bindkey '^ ' autosuggest-accept
+
+# Recommend missing packages
+. /etc/zsh_command_not_found
