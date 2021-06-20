@@ -17,10 +17,12 @@ return packer.startup(
         -- lang stuff
         use "nvim-treesitter/nvim-treesitter"
         use "neovim/nvim-lspconfig"
+        use "glepnir/lspsaga.nvim"
         use "hrsh7th/nvim-compe"
         use "onsails/lspkind-nvim"
         use "sbdchd/neoformat"
         use "kabouzeid/nvim-lspinstall"
+        use {"folke/trouble.nvim", requires = "kyazdani42/nvim-web-devicons"}
 
         use "lewis6991/gitsigns.nvim"
         use "glepnir/galaxyline.nvim"

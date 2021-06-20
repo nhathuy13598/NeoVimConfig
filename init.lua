@@ -1,5 +1,5 @@
 -- load all plugins
-require "globals" 
+require "globals"
 require "plugins"
 require "settings"
 require "mappings"
@@ -11,6 +11,7 @@ require("colorizer").setup()
 require("neoscroll").setup() -- smooth scroll
 
 -- lsp stuff
+require "configs/lsp-saga"
 require "configs/nvim-lspconfig"
 require "configs/compe-completion"
 
