@@ -10,6 +10,6 @@ if [ ! d ~/.local/share/nvim/site/pack/packer ]; then
   echo "Packer installed!"
   echo
 fi
-bash lazygit.bash
-bash ranger.bash
-bash zsh.bash
+./lazygit
+./ranger
+./zsh
