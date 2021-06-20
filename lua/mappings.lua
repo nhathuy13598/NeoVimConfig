@@ -59,3 +59,10 @@ map("n", "<Leader>e", [[<Cmd>NvimTreeToggle<CR>]], nsilent)
 -- Map keys for autocompletion
 vim.cmd([[inoremap <expr> <C-j> pumvisible() ? "\<C-N>" : "\<C-j>"]])
 vim.cmd([[inoremap <expr> <C-k> pumvisible() ? "\<C-P>" : "\<C-k>"]])
+
+-- nvim-compe key map
+vim.cmd('inoremap <silent><expr> <C-Space> compe#complete()')
+vim.cmd("inoremap <silent><expr> <CR>      compe#confirm('<CR>')")  -- Consider to change to <TAB>
+vim.cmd("inoremap <silent><expr> <C-e>     compe#close('<C-e>')")
+vim.cmd("inoremap <silent><expr> <C-f>     compe#scroll({ 'delta': +4 })")
+vim.cmd("inoremap <silent><expr> <C-d>     compe#scroll({ 'delta': -4 })")
