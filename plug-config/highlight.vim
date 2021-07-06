@@ -71,12 +71,6 @@ fg_bg("DiffAdd", nord_blue, "none")
 fg_bg("DiffChange", one_bg2, "none")
 fg_bg("DiffModified", nord_blue, "none")
 
--- telescope
-fg("TelescopeBorder", line)
-fg("TelescopePromptBorder", line)
-fg("TelescopeResultsBorder", line)
-fg("TelescopePreviewBorder", grey)
-
 -- bufferline
 
 fg_bg("BufferLineFill", grey_fg, black2)
