@@ -2,83 +2,29 @@
 if empty(glob('~/.config/nvim/autoload/plug.vim'))
   silent !curl -fLo ~/.config/nvim/autoload/plug.vim --create-dirs
     \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-  "autocmd VimEnter * PlugInstall
   autocmd VimEnter * PlugInstall | source $MYVIMRC
 endif
-let g:polyglot_disabled = ['jsx']
-let g:vim_jsx_pretty_highlight_close_tag = 1
+
 call plug#begin('~/.config/nvim/autoload/plugged')
-
-    " Highlight JXS
-    Plug 'yuezk/vim-js'
-    Plug 'maxmellon/vim-jsx-pretty'
-
-    " Auto pairs for '(' '[' '{'
-    Plug 'jiangmiao/auto-pairs'
-
-    "CMake plugin
-    Plug 'vhdirk/vim-cmake'
-
-    "Theme
-    Plug 'ghifarit53/tokyonight-vim'
-    Plug 'vim-airline/vim-airline'
-    Plug 'vim-airline/vim-airline-themes'
-    Plug 'ryanoasis/vim-devicons'
 
     " Stable version of coc
     Plug 'neoclide/coc.nvim', {'branch': 'release'}
-    Plug 'tpope/vim-surround'
-    Plug 'tpope/vim-fugitive'
-    Plug 'voldikss/vim-floaterm'
 
     " Debugging plugin
     Plug 'puremourning/vimspector'
-    Plug 'szw/vim-maximizer'
 
-    " Show Intellisense
-    Plug 'liuchengxu/vim-which-key'
+    " Themes
+    Plug 'joshdick/onedark.vim'
 
-    " FZF
-    Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
-    Plug 'junegunn/fzf.vim'
+    " Nvim tree
+    Plug 'kyazdani42/nvim-tree.lua'
+    Plug 'kyazdani42/nvim-web-devicons'
 
-    " Go
-    Plug 'fatih/vim-go'
+    Plug 'akinsho/nvim-bufferline.lua'
+    Plug 'glepnir/galaxyline.nvim'
+    Plug 'norcalli/nvim-colorizer.lua'
 
-    " Ranger
-    Plug 'kevinhwang91/rnvimr', {'do': 'make sync'}
-
-    " Easymotion
-    Plug 'easymotion/vim-easymotion'
-
-    Plug 'airblade/vim-gitgutter'
-
-    " Indent line
-    Plug 'Yggdroot/indentLine'
-
-    " Commentary
-    Plug 'tpope/vim-commentary'
-
-    " Quickly align
-    Plug 'junegunn/vim-easy-align'
-
-    " Vim snippet
-    Plug 'honza/vim-snippets'
-
-    " Auto close tag
-    Plug 'alvan/vim-closetag'
-
-    " Start screen
-    Plug 'mhinz/vim-startify'
-
-    " NERD tree
-    Plug 'preservim/nerdtree'
-
-    " Enhance C/C++ color
-    Plug 'octol/vim-cpp-enhanced-highlight'
-
-    " Copy paste system
-    Plug 'christoomey/vim-system-copy'
+    Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}  " We recommend updating the parsers on update
 call plug#end()
 
 " Automatically install missing plugins on startup
@@ -88,13 +34,13 @@ autocmd VimEnter *
   \| endif
 
 " Coc extension
-let g:coc_global_extensions = [
-\   'coc-css',
-\   'coc-html',
-\   'coc-emmet',
-\   'coc-eslint',
-\   'coc-prettier',
-\   'coc-tsserver',
-\   'coc-clangd',
-\   'coc-snippets',
-\ ]
+" let g:coc_global_extensions = [
+" \   'coc-css',
+" \   'coc-html',
+" \   'coc-emmet',
+" \   'coc-eslint',
+" \   'coc-prettier',
+" \   'coc-tsserver',
+" \   'coc-clangd',
+" \   'coc-snippets',
+" \ ]

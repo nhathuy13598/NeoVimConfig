@@ -33,17 +33,13 @@
         "javascriptreact",
         "json"
     ],
-    // Emmet language
     "emmet.includeLanguages": {
         "vue-html": "html",
         "javascript": "javascriptreact"
     },
-    // Prettier
     "prettier.tabWidth": 4,
-    // Auto update extensions
     "coc.preferences.extensionUpdateCheck": "daily",
     "clangd.path": "/home/nhathuy/.config/coc/extensions/coc-clangd-data/install/11.0.0/clangd_11.0.0/bin/clangd",
-    // Language Servers
     "languageserver": {
         "golang": {
             "command": "gopls",
