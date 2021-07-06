@@ -14,3 +14,9 @@ let g:vimspector_base_dir=expand('$HOME/.config/nvim/')
 
 " Map space to leader
 let mapleader = " "
+
+" Auto indent after hit Enter. We can use with FileType like below
+" au FileType html set shiftwidth=2
+" au FileType html set tabstop=2
+" au FileType html set autoindent
+set autoindent
