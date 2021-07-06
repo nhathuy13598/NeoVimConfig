@@ -10,8 +10,6 @@ set list
 " Blink cursor
 set guicursor+=a:-blinkwait175-blinkoff150-blinkon175
 
-syntax on
-set termguicolors
 let g:vimspector_base_dir=expand('$HOME/.config/nvim/')
 
 " Map space to leader

@@ -85,7 +85,3 @@ end
 
 config()
 EOF
-highlight! NvimTreeGitDeleted guifg=Cyan
-highlight! NvimTreeGitDirty guifg=Yellow
-highlight! NvimTreeVertSplit guifg=#1b1f27 guibg=#1b1f27 " The color of right vertical split
-highlight! NvimTreeNormal guibg=#1b1f27 " The color of entire NvimTree

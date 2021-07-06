@@ -58,5 +58,3 @@ require('telescope').setup{
   }
 }
 EOF
-highlight! TelescopeSelection guibg=#1e222a
-highlight! TelescopePreviewLine guibg=#1e222a

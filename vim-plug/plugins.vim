@@ -30,6 +30,8 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'folke/which-key.nvim'
 
     Plug 'jiangmiao/auto-pairs'
+
+    Plug 'folke/tokyonight.nvim'
 call plug#end()
 
 " Automatically install missing plugins on startup
