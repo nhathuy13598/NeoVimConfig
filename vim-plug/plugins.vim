@@ -26,6 +26,8 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'nvim-lua/popup.nvim'
     Plug 'nvim-lua/plenary.nvim'
     Plug 'nvim-telescope/telescope.nvim'
+
+    Plug 'folke/which-key.nvim'
 call plug#end()
 
 " Automatically install missing plugins on startup
