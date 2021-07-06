@@ -37,13 +37,13 @@ autocmd VimEnter *
   \| endif
 
 " Coc extension
-" let g:coc_global_extensions = [
-" \   'coc-css',
-" \   'coc-html',
-" \   'coc-emmet',
-" \   'coc-eslint',
-" \   'coc-prettier',
-" \   'coc-tsserver',
-" \   'coc-clangd',
-" \   'coc-snippets',
-" \ ]
+let g:coc_global_extensions = [
+\   'coc-css',
+\   'coc-html',
+\   'coc-emmet',
+\   'coc-eslint',
+\   'coc-prettier',
+\   'coc-tsserver',
+\   'coc-clangd',
+\   'coc-snippets',
+\ ]
