@@ -13,9 +13,6 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " Debugging plugin
     Plug 'puremourning/vimspector'
 
-    " Themes
-    Plug 'joshdick/onedark.vim'
-
     " Nvim tree
     Plug 'kyazdani42/nvim-tree.lua'
     Plug 'kyazdani42/nvim-web-devicons'
