@@ -1,57 +1,36 @@
 lua << EOF
-local colors = {
-    white = "#abb2bf",
-    darker_black = "#1b1f27",
-    black = "#1e222a",
-    black2 = "#252931",
-    one_bg = "#282c34",
-    one_bg2 = "#353b45",
-    one_bg3 = "#30343c",
-    grey = "#42464e",
-    grey_fg = "#565c64",
-    grey_fg2 = "#6f737b",
-    light_grey = "#6f737b",
-    red = "#d47d85",
-    baby_pink = "#DE8C92",
-    pink = "#ff75a0",
-    line = "#2a2e36",
-    green = "#A3BE8C",
-    vibrant_green = "#7eca9c",
-    nord_blue = "#81A1C1",
-    blue = "#61afef",
-    yellow = "#e7c787",
-    sun = "#EBCB8B",
-    purple = "#b4bbc8",
-    dark_purple = "#c882e7",
-    teal = "#519ABA",
-    orange = "#fca2aa",
-    cyan = "#a3b8ef",
-    statusline_bg = "#22262e",
-    lightbg = "#2d3139",
-    lightbg2 = "#262a32"
-}
+local white         = "#abb2bf"
+local darker_black  = "#1b1f27"
+local black         = "#1e222a"
+local black2        = "#252931"
+local one_bg        = "#282c34"
+local one_bg2       = "#353b45"
+local one_bg3       = "#30343c"
+local grey          = "#42464e"
+local grey_fg       = "#565c64"
+local grey_fg2      = "#6f737b"
+local light_grey    = "#6f737b"
+local red           = "#d47d85"
+local baby_pink     = "#DE8C92"
+local pink          = "#ff75a0"
+local line          = "#2a2e36"
+local green         = "#A3BE8C"
+local vibrant_green = "#7eca9c"
+local nord_blue     = "#81A1C1"
+local blue          = "#61afef"
+local yellow        = "#e7c787"
+local sun           = "#EBCB8B"
+local purple        = "#b4bbc8"
+local dark_purple   = "#c882e7"
+local teal          = "#519ABA"
+local orange        = "#fca2aa"
+local cyan          = "#a3b8ef"
+local statusline_bg = "#22262e"
+local lightbg       = "#2d3139"
+local lightbg2      = "#262a32"
+
+
 local cmd = vim.cmd
-
-local white = colors.white
-local darker_black = colors.darker_black
-local black = colors.black
-local black2 = colors.black2
-local one_bg = colors.one_bg
-local one_bg2 = colors.one_bg2
-local one_bg3 = colors.one_bg3
-local light_grey = colors.light_grey
-local grey = colors.grey
-local grey_fg = colors.grey_fg
-local red = colors.red
-local line = colors.line
-local green = colors.green
-local nord_blue = colors.nord_blue
-local blue = colors.blue
-local yellow = colors.yellow
-local purple = colors.purple
-
--- for guifg , bg
-
 local function fg(group, color)
     cmd("hi " .. group .. " guifg=" .. color)
 end
@@ -112,22 +91,6 @@ fg("TelescopePromptBorder", line)
 fg("TelescopeResultsBorder", line)
 fg("TelescopePreviewBorder", grey)
 
--- LspDiagnostics ---
-
--- error / warnings
-fg("LspDiagnosticsSignError", red)
-fg("LspDiagnosticsVirtualTextError", red)
-fg("LspDiagnosticsSignWarning", yellow)
-fg("LspDiagnosticsVirtualTextWarning", yellow)
-
--- info
-fg("LspDiagnosticsSignInformation", green)
-fg("LspDiagnosticsVirtualTextInformation", green)
-
--- hint
-fg("LspDiagnosticsSignHint", purple)
-fg("LspDiagnosticsVirtualTextHint", purple)
-
 -- bufferline
 
 fg_bg("BufferLineFill", grey_fg, black2)
@@ -168,6 +131,4 @@ fg("DashboardCenter", grey_fg)
 fg("DashboardShortcut", grey_fg)
 fg("DashboardFooter", grey_fg)
 
--- Default nvim bg (based on terminal bg)
--- cmd "hi Normal guibg=#1e222a"
 EOF
