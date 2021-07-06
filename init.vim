@@ -7,3 +7,4 @@ source $HOME/.config/nvim/plug-config/galaxy.vim
 source $HOME/.config/nvim/plug-config/highlight.vim
 source $HOME/.config/nvim/plug-config/nvim-tree.vim
 source $HOME/.config/nvim/plug-config/tree-sitter.vim
+source $HOME/.config/nvim/plug-config/telescope.vim
