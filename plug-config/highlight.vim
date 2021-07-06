@@ -1,6 +1,5 @@
 lua << EOF
 local white         = "#abb2bf"
-local darker_black  = "#1b1f27"
 local black         = "#1e222a"
 local black2        = "#252931"
 local one_bg        = "#282c34"
@@ -71,19 +70,6 @@ fg("cursorlinenr", white)
 fg_bg("DiffAdd", nord_blue, "none")
 fg_bg("DiffChange", one_bg2, "none")
 fg_bg("DiffModified", nord_blue, "none")
-
--- NvimTree
-fg("NvimTreeFolderIcon", blue)
-fg("NvimTreeFolderName", blue)
-fg("NvimTreeOpenedFolderName", blue)
-fg("NvimTreeEmptyFolderName", blue)
-fg("NvimTreeIndentMarker", one_bg2)
-fg("NvimTreeVertSplit", darker_black)
-bg("NvimTreeVertSplit", darker_black)
-
-fg("NvimTreeRootFolder", darker_black)
-bg("NvimTreeNormal", darker_black)
-fg_bg("NvimTreeStatuslineNc", darker_black, darker_black)
 
 -- telescope
 fg("TelescopeBorder", line)
