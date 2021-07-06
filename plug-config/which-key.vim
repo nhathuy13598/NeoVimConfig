@@ -6,9 +6,9 @@ require("which-key").setup {
         -- the presets plugin, adds help for a bunch of default keybindings in Neovim
         -- No actual key bindings are created
         presets = {
-            operators       = false, -- adds help for operators like d, y, ...
-            motions         = false, -- adds help for motions
-            text_objects    = false, -- help for text objects triggered after entering an operator
+            operators       = true,  -- adds help for operators like d, y, ...
+            motions         = true,  -- adds help for motions
+            text_objects    = true,  -- help for text objects triggered after entering an operator
             windows         = true,  -- default bindings on <c-w>
             nav             = true,  -- misc bindings to work with windows
             z               = true,  -- bindings for folds, spelling and others prefixed with z
@@ -51,26 +51,25 @@ vim.api.nvim_set_keymap('n', '<Leader>e', ":NvimTreeToggle<CR>", {noremap = true
 -- TODO create entire treesitter section
 
 local mappings = {
-  ["c"] = "Close Buffer",
-  ["e"] = "Explorer",
-  
-  p = {
-    name = "Plug",
-    i = { ":PlugInstall<cr>"    , "Install" },
-    r = { ":PlugClean<cr>"      , "Remove unused" },
-    u = { ":PlugUpdate<cr>"     , "Update" },
-  },
-  s = {
-    name = "Search",
-    b = { "<cmd>Telescope git_branches<cr>" , "Checkout branch" },
-    c = { "<cmd>Telescope colorscheme<cr>"  , "Colorscheme" },
-    f = { "<cmd>Telescope find_files<cr>"   , "Find File" },
-    h = { "<cmd>Telescope help_tags<cr>"    , "Find Help" },
-    M = { "<cmd>Telescope man_pages<cr>"    , "Man Pages" },
-    r = { "<cmd>Telescope oldfiles<cr>"     , "Open Recent File" },
-    R = { "<cmd>Telescope registers<cr>"    , "Registers" },
-    t = { "<cmd>Telescope live_grep<cr>"    , "Text" },
-  }
+    ["e"] = "Explorer",
+
+    p = {
+        name = "Plug",
+        i = { ":PlugInstall<cr>"    , "Install" },
+        r = { ":PlugClean<cr>"      , "Remove unused" },
+        u = { ":PlugUpdate<cr>"     , "Update" },
+    },
+    s = {
+        name = "Search",
+        b = { "<cmd>Telescope git_branches<cr>" , "Checkout branch" },
+        c = { "<cmd>Telescope colorscheme<cr>"  , "Colorscheme" },
+        f = { "<cmd>Telescope find_files<cr>"   , "Find File" },
+        h = { "<cmd>Telescope help_tags<cr>"    , "Find Help" },
+        M = { "<cmd>Telescope man_pages<cr>"    , "Man Pages" },
+        r = { "<cmd>Telescope oldfiles<cr>"     , "Open Recent File" },
+        R = { "<cmd>Telescope registers<cr>"    , "Registers" },
+        t = { "<cmd>Telescope live_grep<cr>"    , "Text" },
+    }
 }
 
 local wk = require "which-key"
