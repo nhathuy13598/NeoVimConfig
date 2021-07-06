@@ -1,0 +1,1 @@
+highlight! MatchParen guifg=yellow guibg=#252931 gui=bold
