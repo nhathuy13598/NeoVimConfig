@@ -7,10 +7,6 @@ endif
 
 call plug#begin('~/.config/nvim/autoload/plugged')
 
-    "Theme
-    Plug 'ryanoasis/vim-devicons'
-    Plug 'kyazdani42/nvim-web-devicons'
-
     " Stable version of coc
     Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
@@ -22,12 +18,13 @@ call plug#begin('~/.config/nvim/autoload/plugged')
 
     " Nvim tree
     Plug 'kyazdani42/nvim-tree.lua'
+    Plug 'kyazdani42/nvim-web-devicons'
 
     Plug 'akinsho/nvim-bufferline.lua'
     Plug 'glepnir/galaxyline.nvim'
     Plug 'norcalli/nvim-colorizer.lua'
 
-    Plug 'nvim-treesitter/nvim-treesitter'
+    Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}  " We recommend updating the parsers on update
 call plug#end()
 
 " Automatically install missing plugins on startup

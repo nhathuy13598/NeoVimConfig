@@ -1,7 +1,5 @@
 lua << EOF
-local M = {}
-
-M.config = function()
+config = function()
     local g = vim.g
 
     g.nvim_tree_side                    = "left"
@@ -12,7 +10,7 @@ M.config = function()
     g.nvim_tree_quit_on_open            = 0
     g.nvim_tree_follow                  = 1
     g.nvim_tree_indent_markers          = 1
-    g.nvim_tree_hide_dotfiles           = 1
+    g.nvim_tree_hide_dotfiles           = 0
     g.nvim_tree_git_hl                  = 1
     g.nvim_tree_root_folder_modifier    = ":t"
     g.nvim_tree_tab_open                = 0
@@ -37,12 +35,14 @@ M.config = function()
             ignored     = "◌"
         },
         folder = {
-            default         = "",
-            open            = "",
-            symlink         = "",
-            empty           = "",
-            empty_open      = "",
-            symlink_open    = ""
+            arrow_open = "",
+            arrow_closed = "",
+            default = "",
+            open = "",
+            empty = "",
+            empty_open = "",
+            symlink = "",
+            symlink_open = "",
         }
     }
 
@@ -83,5 +83,5 @@ M.config = function()
     }
 end
 
-return M
+config()
 EOF
