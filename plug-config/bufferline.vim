@@ -27,7 +27,6 @@ require "bufferline".setup {
 
 local opt = {silent = true}
 local map = vim.api.nvim_set_keymap
-vim.g.mapleader = " "
 
 -- move between tabs
 map("n", "<TAB>", [[<Cmd>BufferLineCycleNext<CR>]], opt)

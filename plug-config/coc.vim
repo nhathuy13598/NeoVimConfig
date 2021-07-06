@@ -79,12 +79,6 @@ command! -nargs=0 Prettier :CocCommand prettier.formatFile
 vmap <leader>f  <Plug>(coc-format-selected)<CR>
 nmap <leader>f  <Plug>(coc-format-selected)<CR>
 
-" Use <C-n> for jump to next placeholder, it's default of coc.nvim
-let g:coc_snippet_next = '<c-n>'
-
-" Use <C-b> for jump to previous placeholder, it's default of coc.nvim
-let g:coc_snippet_prev = '<c-b>'
-
 inoremap <silent><expr> <TAB>
       \ pumvisible() ? coc#_select_confirm() :
       \ coc#expandableOrJumpable() ? "\<C-r>=coc#rpc#request('doKeymap', ['snippets-expand-jump',''])\<CR>" :
@@ -97,3 +91,4 @@ function! s:check_back_space() abort
 endfunction
 
 let g:coc_snippet_next = '<tab>'
+let g:coc_snippet_prev = '<S-tab>'
