@@ -32,6 +32,9 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'jiangmiao/auto-pairs'
 
     Plug 'folke/tokyonight.nvim'
+
+    " Auto close tags HTML, JSX
+    Plug 'alvan/vim-closetag'
 call plug#end()
 
 " Automatically install missing plugins on startup
