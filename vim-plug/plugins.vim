@@ -28,6 +28,8 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'nvim-telescope/telescope.nvim'
 
     Plug 'folke/which-key.nvim'
+
+    Plug 'jiangmiao/auto-pairs'
 call plug#end()
 
 " Automatically install missing plugins on startup
